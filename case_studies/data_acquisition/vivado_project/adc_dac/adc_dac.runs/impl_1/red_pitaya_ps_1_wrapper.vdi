@@ -1,0 +1,85 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Tue Apr  1 13:26:21 2025
+# Process ID: 368124
+# Current directory: /data/devel/redpitaya/vivado/adc_dac/adc_dac.runs/impl_1
+# Command line: vivado -log red_pitaya_ps_1_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source red_pitaya_ps_1_wrapper.tcl -notrace
+# Log file: /data/devel/redpitaya/vivado/adc_dac/adc_dac.runs/impl_1/red_pitaya_ps_1_wrapper.vdi
+# Journal file: /data/devel/redpitaya/vivado/adc_dac/adc_dac.runs/impl_1/vivado.jou
+# Running On: aidevel, OS: Linux, CPU Frequency: 2954.545 MHz, CPU Physical cores: 4, Host memory: 16777 MB
+#-----------------------------------------------------------
+source red_pitaya_ps_1_wrapper.tcl -notrace
+Command: open_checkpoint red_pitaya_ps_1_wrapper_routed.dcp
+
+Starting open_checkpoint Task
+
+Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.03 . Memory (MB): peak = 1276.438 ; gain = 5.938 ; free physical = 8498 ; free virtual = 18494
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+Netlist sorting complete. Time (s): cpu = 00:00:00.12 ; elapsed = 00:00:00.11 . Memory (MB): peak = 1625.648 ; gain = 0.000 ; free physical = 8142 ; free virtual = 18138
+INFO: [Netlist 29-17] Analyzing 1775 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2023.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Read ShapeDB Complete: Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.05 . Memory (MB): peak = 1727.180 ; gain = 4.000 ; free physical = 8038 ; free virtual = 18035
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+INFO: [Designutils 20-5722] Start Reading Physical Databases.
+Reading placement.
+Read Netlist Cache: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2345.758 ; gain = 0.000 ; free physical = 7507 ; free virtual = 17503
+Reading placer database...
+Read Device Cache: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2345.758 ; gain = 0.000 ; free physical = 7504 ; free virtual = 17500
+Read PlaceDB: Time (s): cpu = 00:00:00.51 ; elapsed = 00:00:00.51 . Memory (MB): peak = 2345.758 ; gain = 0.000 ; free physical = 7499 ; free virtual = 17495
+Read PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2345.758 ; gain = 0.000 ; free physical = 7499 ; free virtual = 17495
+Reading routing.
+Read RouteStorage: Time (s): cpu = 00:00:00.2 ; elapsed = 00:00:00.21 . Memory (MB): peak = 2346.758 ; gain = 1.000 ; free physical = 7495 ; free virtual = 17492
+Read Physdb Files: Time (s): cpu = 00:00:00.73 ; elapsed = 00:00:00.75 . Memory (MB): peak = 2346.758 ; gain = 1.000 ; free physical = 7495 ; free virtual = 17492
+Restored from archive | CPU: 0.770000 secs | Memory: 19.132141 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00.76 ; elapsed = 00:00:00.78 . Memory (MB): peak = 2346.758 ; gain = 9.906 ; free physical = 7495 ; free virtual = 17492
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2346.758 ; gain = 0.000 ; free physical = 7495 ; free virtual = 17492
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 909 instances were transformed.
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 7 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 2 instances
+  RAM64M => RAM64M (RAMD64E(x4)): 896 instances
+  SRLC32E => SRL16E: 4 instances
+
+INFO: [Project 1-604] Checkpoint was created with Vivado v2023.2 (64-bit) build 4029153
+WARNING: [Vivado 12-23575] Critical violations of the methodology design rules detected. Critical violations may contribute to timing failures or cause functional issues in hardware. Run report_methodology for more information.
+open_checkpoint: Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 2354.758 ; gain = 1084.258 ; free physical = 7495 ; free virtual = 17491
+INFO: [Memdata 28-208] The XPM instance: <red_pitaya_ps_1_i/dac_data_fifo/U0/COMP_IPIC2AXI_S/gtxd.COMP_TXD_FIFO/gfifo_gen.COMP_AXIS_FG_FIFO/COMP_FIFO/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst> is part of IP: <red_pitaya_ps_1_i/dac_data_fifo>. This XPM instance will be excluded from the .mmi because updatemem is prohibited from making changes to an XPM that is part of an IP.
+INFO: [Memdata 28-167] Found XPM memory block red_pitaya_ps_1_i/axis_clock_converter_0/inst/gen_async_conv.axisc_async_clock_converter_0/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the red_pitaya_ps_1_i/axis_clock_converter_0/inst/gen_async_conv.axisc_async_clock_converter_0/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block red_pitaya_ps_1_i/adc_data_fifo/U0/COMP_IPIC2AXI_S/grxd.COMP_rx_len_fifo/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the red_pitaya_ps_1_i/adc_data_fifo/U0/COMP_IPIC2AXI_S/grxd.COMP_rx_len_fifo/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst block.
+INFO: [Memdata 28-208] The XPM instance: <red_pitaya_ps_1_i/adc_data_fifo/U0/COMP_IPIC2AXI_S/grxd.COMP_RX_FIFO/gfifo_gen.COMP_AXIS_FG_FIFO/COMP_FIFO/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst> is part of IP: <red_pitaya_ps_1_i/adc_data_fifo>. This XPM instance will be excluded from the .mmi because updatemem is prohibited from making changes to an XPM that is part of an IP.
+Command: write_bitstream -force red_pitaya_ps_1_wrapper.bit -bin_file
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010'
+Running DRC as a precondition to command write_bitstream
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/data/Xilinx/Vivado/Vivado/2023.2/data/ip'.
+INFO: [DRC 23-27] Running DRC with 8 threads
+WARNING: [DRC RTSTAT-10] No routable loads: 1 net(s) have no routable loads. The problem bus(es) and/or net(s) are red_pitaya_ps_1_i/dac_data_fifo/U0/gaxif.COMP_AXI4/axi_rd_sm/axi_read_fsm/gaxi_full_sm.r_valid_r1.
+INFO: [DRC REQP-181] writefirst: Synchronous clocking is detected for BRAM (red_pitaya_ps_1_i/dac_data_fifo/U0/COMP_IPIC2AXI_S/gtxd.COMP_TXD_FIFO/gfifo_gen.COMP_AXIS_FG_FIFO/COMP_FIFO/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg) in SDP mode with WRITE_FIRST write-mode. This is the preferred mode for best power characteristics, however it may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+INFO: [Vivado 12-3199] DRC finished with 0 Errors, 1 Warnings, 1 Advisories
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+INFO: [Designutils 20-2272] Running write_bitstream with 8 threads.
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Writing bitstream ./red_pitaya_ps_1_wrapper.bit...
+Writing bitstream ./red_pitaya_ps_1_wrapper.bin...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Project 1-1876] WebTalk data collection is mandatory when using a ULT device. To see the specific WebTalk data collected for your design, open the usage_statistics_webtalk.html or usage_statistics_webtalk.xml file in the implementation directory.
+INFO: [Common 17-83] Releasing license: Implementation
+28 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+write_bitstream completed successfully
+write_bitstream: Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 2867.629 ; gain = 497.996 ; free physical = 7063 ; free virtual = 17060
+INFO: [Common 17-206] Exiting Vivado at Tue Apr  1 13:27:01 2025...

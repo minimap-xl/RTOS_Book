@@ -1,0 +1,76 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.970298",
+   "Default View_TopLeft":"1254,126",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.5.8 2022-09-21 7111 VDI=41 GEI=38 GUI=JA:10.0 TLS
+#  -string -flagsOSRD
+preplace port DDR -pg 1 -lvl 9 -x 2910 -y 730 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -lvl 9 -x 2910 -y 750 -defaultsOSRD
+preplace port adc_clk_i -pg 1 -lvl 0 -x 0 -y 240 -defaultsOSRD
+preplace port port-id_dac_rst_o -pg 1 -lvl 9 -x 2910 -y 790 -defaultsOSRD
+preplace port port-id_dac_sel_o -pg 1 -lvl 9 -x 2910 -y 850 -defaultsOSRD
+preplace port port-id_dac_clk_o -pg 1 -lvl 9 -x 2910 -y 810 -defaultsOSRD
+preplace portBus adc_dat_a -pg 1 -lvl 0 -x 0 -y 300 -defaultsOSRD
+preplace portBus adc_dat_b -pg 1 -lvl 0 -x 0 -y 320 -defaultsOSRD
+preplace portBus adc_cdcs_o -pg 1 -lvl 9 -x 2910 -y 460 -defaultsOSRD
+preplace portBus dac_dat_o -pg 1 -lvl 9 -x 2910 -y 870 -defaultsOSRD
+preplace portBus dac_wrt_o -pg 1 -lvl 9 -x 2910 -y 830 -defaultsOSRD
+preplace inst axis_decimator_0 -pg 1 -lvl 5 -x 1580 -y 380 -defaultsOSRD
+preplace inst axis_packetizer_0 -pg 1 -lvl 6 -x 2020 -y 630 -defaultsOSRD
+preplace inst axis_red_pitaya_adc_0 -pg 1 -lvl 2 -x 460 -y 300 -defaultsOSRD
+preplace inst adc_data_fifo -pg 1 -lvl 7 -x 2420 -y 130 -defaultsOSRD
+preplace inst red_pitaya_ps -pg 1 -lvl 5 -x 1580 -y 780 -defaultsOSRD
+preplace inst red_pitaya_ps_axi_periph -pg 1 -lvl 6 -x 2020 -y 260 -defaultsOSRD
+preplace inst rst_red_pitaya_ps_125M -pg 1 -lvl 2 -x 460 -y 490 -defaultsOSRD
+preplace inst clock_in -pg 1 -lvl 1 -x 150 -y 240 -defaultsOSRD
+preplace inst adc_clk_stabilizer -pg 1 -lvl 8 -x 2750 -y 460 -defaultsOSRD
+preplace inst axis_clock_converter_0 -pg 1 -lvl 3 -x 830 -y 330 -defaultsOSRD
+preplace inst util_vector_logic_0 -pg 1 -lvl 4 -x 1170 -y 350 -defaultsOSRD
+preplace inst enable_register -pg 1 -lvl 7 -x 2420 -y 630 -defaultsOSRD
+preplace inst xlconstant_0 -pg 1 -lvl 5 -x 1580 -y 610 -defaultsOSRD
+preplace inst decimation_register -pg 1 -lvl 7 -x 2420 -y 450 -defaultsOSRD
+preplace inst dac_data_fifo -pg 1 -lvl 7 -x 2420 -y 300 -defaultsOSRD
+preplace inst dac_out_0 -pg 1 -lvl 8 -x 2750 -y 850 -defaultsOSRD
+preplace netloc adc_dat_a_0_1 1 0 2 NJ 300 NJ
+preplace netloc adc_dat_b_0_1 1 0 2 NJ 320 NJ
+preplace netloc red_pitaya_ps_FCLK_CLK0 1 1 7 280 390 660 430 NJ 430 1350 550 1840 760 2230 720 2600
+preplace netloc red_pitaya_ps_FCLK_RESET0_N 1 1 5 280 590 NJ 590 1000J 530 NJ 530 1800
+preplace netloc rst_red_pitaya_ps_125M_interconnect_aresetn 1 2 4 NJ 510 NJ 510 1340J 520 1830
+preplace netloc rst_red_pitaya_ps_125M_peripheral_aresetn 1 2 5 640 520 NJ 520 1330 500 1870 540 2180
+preplace netloc adc_clk_stabilizer_dout 1 8 1 NJ 460
+preplace netloc axi_cfg_register_0_cfg_data 1 3 5 1020 540 NJ 540 1850J 530 2190J 540 2600
+preplace netloc xlconstant_0_dout 1 5 1 1810J 610n
+preplace netloc decimation_register_cfg_data 1 4 4 1360 510 1850J 520 2220J 530 2600
+preplace netloc clock_in_IBUF_OUT 1 1 2 280 380 650
+preplace netloc axis_clock_converter_0_m_axis_tvalid 1 3 1 1020 320n
+preplace netloc util_vector_logic_0_Res 1 4 1 1320 350n
+preplace netloc axis_decimator_0_s_axis_tready 1 3 2 1000 420 1320J
+preplace netloc axis_clock_converter_0_m_axis_tdata 1 3 2 1010 280 1320J
+preplace netloc dac_out_0_dac_rst 1 8 1 2880J 790n
+preplace netloc dac_out_0_dac_sel 1 8 1 NJ 850
+preplace netloc dac_out_0_dac_dat 1 8 1 NJ 870
+preplace netloc dac_out_0_dac_clk 1 8 1 2890 810n
+preplace netloc adc_data_fifo_interrupt 1 4 4 1360 670 1810J 720 2170J 550 2610
+preplace netloc red_pitaya_ps_M_AXI_GP0 1 5 1 1820 60n
+preplace netloc axis_packetizer_0_M_AXIS 1 6 1 2200 110n
+preplace netloc red_pitaya_ps_axi_periph_M00_AXI 1 6 1 2240 190n
+preplace netloc red_pitaya_ps_axi_periph_M01_AXI 1 6 1 2190 90n
+preplace netloc red_pitaya_ps_axi_periph_M02_AXI 1 6 1 2210 130n
+preplace netloc red_pitaya_ps_axi_periph_M03_AXI 1 6 1 2210 250n
+preplace netloc red_pitaya_ps_axi_periph_M04_AXI 1 6 1 N 270
+preplace netloc red_pitaya_ps_axi_periph_M05_AXI 1 6 1 N 290
+preplace netloc axis_red_pitaya_adc_0_M_AXIS 1 2 1 N 290
+preplace netloc dac_data_fifo_AXI_STR_TXD 1 7 1 2620 280n
+preplace netloc axis_decimator_0_M_AXIS 1 5 1 1860 380n
+preplace netloc red_pitaya_ps_DDR 1 5 4 NJ 730 NJ 730 NJ 730 NJ
+preplace netloc red_pitaya_ps_FIXED_IO 1 5 4 NJ 750 NJ 750 NJ 750 NJ
+preplace netloc CLK_IN_D_0_1 1 0 1 NJ 240
+levelinfo -pg 1 0 150 460 830 1170 1580 2020 2420 2750 2910
+pagesize -pg 1 -db -bbox -sgen -170 0 3080 950
+"
+}
+{
+   "da_axi4_cnt":"20",
+   "da_clkrst_cnt":"5"
+}
