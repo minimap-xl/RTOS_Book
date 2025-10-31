@@ -1,0 +1,116 @@
+menu "CAN/UDP Gateway"
+    config GW_IP
+        string "IP Address of the Ethernet interface"
+	default "198.18.20.51"
+
+    config GW_NETMASK
+        string "Netmask of the Ethernet interface"
+	default "255.255.255.0"
+
+    config GW_CAN_TX_GPIO
+    	int "GPIO number of the CAN TX line"
+    	default 5 if IDF_TARGET_ESP32
+    	default 0
+    	help
+	    GPIO number of the CAN TX line.
+	    The default is correct for the Olimex ESP32-EVB.
+
+    config GW_CAN_RX_GPIO
+    	int "GPIO number of the CAN RX line"
+    	default 35 if IDF_TARGET_ESP32
+    	default 0
+    	help
+	    GPIO number of the CAN RX line.
+	    The default is correct for the Olimex ESP32-EVB.
+
+    config GW_CAN_BIT_RATE
+        default 500000
+        int "CAN bit rate (b/s)"
+
+    config GW_CAN_SJW
+        int "Synchronization Jump Width (SJW) (quanta)"
+	default 3
+	help
+	    Synchronization Jump Width (SJW).
+	    The value is expressed in quanta, there are 10 quanta per bit.
+	    The default value allows maximum phase compensation.
+
+    config GW_CAN_MQ_SIZE
+    	int "Size of the UDP -> CAN forwarding queue"
+    	default 5
+    	help
+	     Size of the UDP -> CAN forwarding queue
+	     (number of elements)
+
+    config GW_CAN_RX_PRIO
+    	int "Priority of the CAN receive task"
+    	default 13
+    	help
+	    Priority of the CAN receive task.
+
+    config GW_CAN_RX_STACK_DEPTH
+    	int "Stack depth of the CAN receive task"
+        default 3072
+    	help
+	    Stack depth of the CAN receive task.
+	    The default value supports logging from the task iself.
+
+    config GW_CAN_FW_PRIO
+    	int "Priority of the CAN forwarding task"
+    	default 12
+    	help
+	    Priority of the CAN forwarding task.
+
+    config GW_CAN_FW_STACK_DEPTH
+    	int "Stack depth of the CAN forwarding task"
+        default 3072
+    	help
+	    Stack depth of the CAN forwarding task.
+	    The default value supports logging from the task iself.
+
+    config GW_UDP_MQ_SIZE
+    	int "Size of the CAN -> UDP forwarding queue"
+    	default 5
+    	help
+	     Size of the CAN -> UDP forwarding queue
+	     (number of elements)
+
+    config GW_UDP_RX_PRIO
+    	int "Priority of the UDP receive task"
+    	default 13
+    	help
+	    Priority of the UDP receive task.
+
+    config GW_UDP_RX_STACK_DEPTH
+    	int "Stack depth of the UDP receive task"
+        default 3072
+    	help
+	    Stack depth of the UDP receive task.
+	    The default value supports logging from the task iself.
+
+    config GW_UDP_FW_PRIO
+    	int "Priority of the UDP forwarding task"
+    	default 12
+    	help
+	    Priority of the UDP forwarding task.
+
+    config GW_UDP_FW_STACK_DEPTH
+    	int "Stack depth of the UDP forwarding task"
+        default 3072
+    	help
+	    Stack depth of the UDP forwarding task.
+	    The default value supports logging from the task iself.
+
+    config GW_UDP_IF_NAME
+        string "Name of the network interface for UDP"
+	default "ETH_DEF"
+	help
+	    Name of the network interface for UDP
+
+    config GW_UDP_PORT
+    	int "UDP port for broadcasting CAN/UDP frames"
+        default 9999
+    	help
+	    UDP port for broadcasting CAN/UDP frames.
+    
+endmenu

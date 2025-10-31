@@ -1,0 +1,17 @@
+/** @mainpage Abstract
+
+    This documentation describes a library that encapsulates classic CAN frames
+    into UDP datagrams and broadcasts them on a network interface.
+    Symmetrically, it also provides functions to listen for those datagrams and
+    extract their content.  The API it provides is independent of the target
+    operating system.  It is described in detail in the book **"Real-Time
+    Embedded Systems—Open-Source Operating Systems Perspective"**, by Ivan
+    Cibrario Bertolotti and Gabriele Manduchi, 2nd Edition, CRC Press, Taylor &
+    Francis Group, 2025.
+
+    The library currently supports *Linux* and its in-kernel protocol stack,
+    along with *FreeRTOS* on ESP32-based boards and the *lwIP* protocol stack.
+    Its secondary goal is to show how to write portable code that works across
+    very different operating environments.
+
+*/

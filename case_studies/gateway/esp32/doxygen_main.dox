@@ -1,0 +1,9 @@
+/** @mainpage Abstract
+
+    This documentation describes a simple CAN/UDP gateway, discussed as a case
+    study in the book **"Real-Time Embedded Systems—Open-Source Operating
+    Systems Perspective"**, by Ivan Cibrario Bertolotti and Gabriele Manduchi,
+    2nd Edition, CRC Press, Taylor & Francis Group, 2025.  The gateway runs on
+    ESP32-based boards.
+
+*/
