@@ -51,3 +51,8 @@ If you see it, everything worked and the driver is ready for use. The driver wil
 
 
 
+
+The Vivado project (for Vivado2023) for buinding the FPGA firmware is also available under **vivado_project** directory. The project has been built using Vivado 2023.2 and subsequent versions of vivado may require some porting. In order to open the project from Vivado 2023, select File->Project->Open... and in the open dialog navigate into vivado_project/adc_dac and select adc_dac.xpr.
+
+
+
