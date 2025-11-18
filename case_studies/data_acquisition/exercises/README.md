@@ -28,10 +28,10 @@ the client is provided in **adc_client.py**.
 
 The second proposed exercise provides a method for measuring the round-trip delay, that is the time required to acquire
 an ADC sample, communicate it via the driver to the program and send it back to
-the DAC. The method consists in generating a sawtooth wave with amplitude 1V (set both the jumpers
-close to the ADC inputs channels to LV) and connecting it to the first ADC channel as
+the DAC. In general, to measure such delay, it is convenient to generate a sawtooth wave with amplitude 1V (set both the jumpers
+close to the ADC inputs channels to LV) and to connect it to the first ADC channel as
 well as the first channel of an oscilloscope. Connect then the second channel of the
-oscilloscope to the first DAC output and run such a program. The second waveform
+oscilloscope to the first DAC output and run such the program reading ADC and outputting DAC. The second waveform
 will appear shifted (delayed) on the oscilloscope and if you zoom the falling edge
 of the waveforms, you can easily measure the delay and see the jitter between the
 original wave and the reproduced one, discovering that the overall average delay
