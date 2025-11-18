@@ -49,10 +49,10 @@ If you see it, everything worked and the driver is ready for use. The driver wil
 * Copy the sample C program (adc_dac_main.c) in the home directory and compile it with the command `gcc -o adc_dac_main -I. adc_dac_main.c`
 * At this point you can test the whole system by launching the program ```adc_dac_main <sync|sync1|sync16k> <sampling frequency> <buffer dimension>")``` with the appropriate parameters as explained in chapter 17.
 
+The Vivado project (for Vivado2023) for building the FPGA firmware is also available under **vivado_project** directory. The project has been built using Vivado 2023.2 and subsequent versions of vivado may require some porting. In order to open the project from Vivado 2023, select File->Project->Open... and in the open dialog navigate into vivado_project/adc_dac and select adc_dac.xpr.
 
+Finally, in folder **excercises** you will find two proposed applications of the adc_dac driver. 
 
-
-The Vivado project (for Vivado2023) for buinding the FPGA firmware is also available under **vivado_project** directory. The project has been built using Vivado 2023.2 and subsequent versions of vivado may require some porting. In order to open the project from Vivado 2023, select File->Project->Open... and in the open dialog navigate into vivado_project/adc_dac and select adc_dac.xpr.
 
 
 
