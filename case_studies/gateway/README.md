@@ -2,7 +2,7 @@
 
 This is a simple CAN/UDP gateway for an ESP32 development board.  It is
 discussed in detail as a case study in the book *"Real-Time Embedded
-Systems—Open-Source Operating Systems Perspective"*, by Ivan Cibrario
+Systems, Open-Source Operating Systems Perspective"*, by Ivan Cibrario
 Bertolotti and Gabriele Manduchi, 2nd Edition, CRC Press, Taylor & Francis
 Group, 2025.
 
