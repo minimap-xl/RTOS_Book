@@ -10,3 +10,7 @@ Group, 2025.  In particular:
 
   * The subtree at [exercises](exercises) contains the solution to some
     programming exercises.
+
+
+The authors welcome comments, critics and suggestions from readers, using the discussion form of this repository.
+
